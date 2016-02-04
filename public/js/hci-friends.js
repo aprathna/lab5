@@ -44,3 +44,14 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+
+$('a').click(anagrammedName){
+	preventDefault();
+	$(this).text();
+	function anagrammedName(name);
+}
+
+
+
+
