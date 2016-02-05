@@ -10,6 +10,8 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
+	$('.friends a').click(clickGram);
 }
 
 function anagrammedName(name) {
@@ -46,12 +48,17 @@ function anagrammedName(name) {
 }
 
 
-$('a').click(anagrammedName){
-	preventDefault();
-	$(this).text();
-	function anagrammedName(name);
-}
+/*$('.friends a').click(anagrammedName);
+console.log('hehueh');
+	name.preventDefault();
+	console.log('hehe')
+	$(this).text(anagrammedName($(this).text()));*/
 
+function clickGram(e){
+	e.preventDefault();
+	var grammedName = anagrammedName($(this).text());
+	$(this).text(grammedName)
+}
 
 
 
